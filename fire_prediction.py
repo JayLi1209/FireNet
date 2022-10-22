@@ -1,24 +1,20 @@
 import pandas as pd
 from sklearn.linear_model import Ridge
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 
 
 # normalize data
 def normalize_df(df):
     result = df.copy()
-    for feature_name in df.columns:
-        max_value = df[feature_name].max()
-        min_value = df[feature_name].min()
-        result[feature_name] = (df[feature_name] - min_value) / (max_value - min_value)
-    return result
-
+    ss = StandardScaler()
+    return pd.DataFrame(ss.fit_transform(result), columns=result.columns)
 
 def normalize_series(s):
     values = s.values
 
     values = values.reshape((len(values), 1))
 
-    scaler = MinMaxScaler()
+    scaler = StandardScaler()
     scaler = scaler.fit(values)
     normalized = scaler.transform(values)
     return normalized
