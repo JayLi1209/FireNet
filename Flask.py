@@ -57,3 +57,4 @@ def predictor():
     predictions = model.predict(data['x'])
     return {"Risk": predictions, "Location": "asdf", "data3": 1}
 
+
