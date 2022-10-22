@@ -27,7 +27,7 @@
         <strong>DEMO</strong>
         Select a state and see how the county drop down changes based on your selection
     </div><br />
-    <form name="form">
+    <form name="form" action="/test/submit" method="post">
         <table width="317" border="0" align="center">
 
             <tr>
@@ -104,12 +104,10 @@
 
                 <td>
                     <div id="county_drop_down">
-                        <form action="/test/submit" method="post">
                             <select id="county" name="county">
                                 <option value="">County...</option>
                             </select>
                             <button type="submit">Submit</button>
-                        </form>
 
                     </div>
 
