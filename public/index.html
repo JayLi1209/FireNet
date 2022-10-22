@@ -102,7 +102,11 @@
          <td height="33">County</td>
     
          <td><div id="county_drop_down">
-         <select id="county" name="county"><option value="">County...</option></select>
+            <form action="/test/submit" method="post">
+                <select id="county" name="county"><option value="">County...</option></select>
+                <button type="submit">Submit</button>
+            </form>
+         
          </div>
     
          <span id="loading_county_drop_down">
@@ -113,6 +117,25 @@
        </tr>
      </table>
      </form>
+
+    <!--  <div class=container>
+        <h3>Select your location!</h3>
+
+
+        <form action="/test/submit" method="post">
+            <input type="text" name="sth">
+            <select>
+
+                <option disabled hidden selected>None</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="California">California</option>
+                <option value="Texas">Texas</option>
+            </select>
+            <button type="submit">Submit</button>
+            <h2>Result</h2>
+        </form>
+        
+    </div> -->
 
      <script src="script.js"></script>
     </body>
