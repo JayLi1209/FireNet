@@ -26,6 +26,11 @@ def normalize_series(s):
 
 def main():
 
+    df = pd.read_csv('uscountiesProcessed.csv')
+    df['latlong'] = list(zip(df.lat, df.lng))
+    df = df.drop(['lat', 'lng'], axis = 1)
+    counties_and_latlong = dict(zip(df.county, df.latlong))
+
     # first gather the data we want to train our model on
     df = pd.read_csv('FW_Veg_Rem_Combined.csv')
     feature_cols = ['latitude', 'longitude', 'Temp_pre_7', 'Wind_pre_7', 'Hum_pre_7', 'Prec_pre_7']
@@ -44,7 +49,7 @@ def main():
 
     # making prediction
 
-    test_loc.reshape(-1, 6)
+    # test_loc.reshape(-1, 6)
 
 
 
