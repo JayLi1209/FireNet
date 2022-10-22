@@ -1,0 +1,56 @@
+:root {
+    --color-text: #FDFEFE;
+    --color-secondary: #00d9ff;
+    --color-accent: #21618C;
+    --color-headings: #117864;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    /* --border-radius: 30px; */
+  }
+
+html {
+    font-size: 62.5%;
+}
+  
+body {
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-body);
+}
+
+h1{
+    font-weight: 700;
+    color: white;
+}
+
+.button{
+    border-radius: 35px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    outline: 0;
+    padding: 2rem 4vw;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 40rem;
+    margin-left: 40rem;
+}
+
+.background {
+    background-color: #FFAB5A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff76a0'/%3E%3Cstop offset='1' stop-color='%23ff76a0' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ffc44b'/%3E%3Cstop offset='1' stop-color='%23ffc44b' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23ff6679'/%3E%3Cstop offset='1' stop-color='%23ff6679' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFAB5A'/%3E%3Cstop offset='1' stop-color='%23FFAB5A' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23F492FF'/%3E%3Cstop offset='1' stop-color='%23F492FF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFE23B'/%3E%3Cstop offset='1' stop-color='%23FFE23B' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+}
+
