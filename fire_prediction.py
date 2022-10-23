@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.linear_model import Ridge
 from sklearn.preprocessing import StandardScaler
-
+import pickle
 
 # normalize data
 def normalize_df(df):
@@ -43,10 +43,9 @@ def main():
     # fitting the model
     model.fit(X_train, y_train)
 
-    # making prediction
 
-    # test_loc.reshape(-1, 6)
-
+    filename = "fire_prediction_model.sav"
+    pickle.dump(model, open(filename, 'wb'))
 
 
 if __name__ == "__main__":
