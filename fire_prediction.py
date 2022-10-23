@@ -5,7 +5,6 @@ FW_Veg_Rem_Combined.csv is a dataset of US wildfires by location, weather, and o
 
 import pandas as pd
 from sklearn.linear_model import Ridge
-from sklearn.model_selection import train_test_split
 import pickle
 
 # first gather the data we want to train our model on
@@ -20,13 +19,11 @@ df = df[df.Hum_pre_7 != -1.0]
 df = df[df.Hum_pre_7 != 0.0]
 
 feature_cols = ['latitude', 'longitude', 'Temp_pre_7', 'Wind_pre_7', 'Hum_pre_7']
-X = df.loc[:, feature_cols]
-y = df.loc[:, 'fire_size']
-
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=101)
+X_train = df.loc[:, feature_cols]
+y_train = df.loc[:, 'fire_size']
 
 # creating the ridge regression model
-model = Ridge(alpha=100)
+model = Ridge(alpha = 3.0)
 
 # fitting the model
 model.fit(X_train, y_train)
