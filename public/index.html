@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
 
     <!-- JQuery JS -->
     <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
@@ -14,167 +19,172 @@
     <!-- Drop Down JS -->
     <script type="text/javascript" src="drop_down.js"></script>
 
+    <title>FireNet</title>
+  </head>
+  <body>
+    <section>
+      <div class="background">
+        <h1>Check For Potential Fire?</h1>
+        <!--
+        <input class="button" placeholder="Enter Zip Code here!" type="text" />-->
+        <div align="center">
+      </div><br />
+      <form name="form" action="/test/submit" method="post">
+          <table width="317" border="0" align="center">
+  
+              <tr>
+                  
+                  <td width="217">
 
+                    <div class="state">
+                      <div class="select">
 
-    <title>Document</title>
-</head>
-
-
-<BODY>
-
-    <div align="center">
-
-        <strong>DEMO</strong>
-        Select a state and see how the county drop down changes based on your selection
-    </div><br />
-    <form name="form" action="/test/submit" method="post">
-        <table width="317" border="0" align="center">
-
-            <tr>
-                <td width="100">State</td>
-                <td width="217">
-                    <select id="state" name="state">
-
-                        <option value='AL'>Alabama</option>
-                        <option value='AK'>Alaska</option>
-                        <option value='AZ'>Arizona</option>
-                        <option value='AR'>Arkansas</option>
-                        <option value='CA'>California</option>
-
-                        <option value='CO'>Colorado</option>
-                        <option value='CT'>Connecticut</option>
-                        <option value='DE'>Delaware</option>
-                        <option value='DC'>District of Columbia</option>
-                        <option value='FL'>Florida</option>
-
-                        <option value='GA'>Georgia</option>
-                        <option value='HI'>Hawaii</option>
-                        <option value='ID'>Idaho</option>
-                        <option value='IL'>Illinois</option>
-                        <option value='IN'>Indiana</option>
-
-                        <option value='IA'>Iowa</option>
-                        <option value='KS'>Kansas</option>
-                        <option value='KY'>Kentucky</option>
-                        <option value='LA'>Louisiana</option>
-                        <option value='ME'>Maine</option>
-
-                        <option value='MD'>Maryland</option>
-                        <option value='MA'>Massachusetts</option>
-                        <option value='MI'>Michigan</option>
-                        <option value='MN'>Minnesota</option>
-                        <option value='MS'>Mississippi</option>
-
-                        <option value='MO'>Missouri</option>
-                        <option value='MT'>Montana</option>
-                        <option value='NE'>Nebraska</option>
-                        <option value='NV'>Nevada</option>
-                        <option value='NH'>New Hampshire</option>
-
-                        <option value='NJ'>New Jersey</option>
-                        <option value='NM'>New Mexico</option>
-                        <option value='NY'>New York</option>
-                        <option value='NC'>North Carolina</option>
-                        <option value='ND'>North Dakota</option>
-
-                        <option value='OH'>Ohio</option>
-                        <option value='OK'>Oklahoma</option>
-                        <option value='OR'>Oregon</option>
-                        <option value='PA'>Pennsylvania</option>
-                        <option value='RI'>Rhode Island</option>
-
-                        <option value='SC'>South Carolina</option>
-                        <option value='SD'>South Dakota</option>
-                        <option value='TN'>Tennessee</option>
-                        <option value='TX'>Texas</option>
-                        <option value='UT'>Utah</option>
-
-                        <option value='VT'>Vermont</option>
-                        <option value='VA'>Virginia</option>
-                        <option value='WA'>Washington</option>
-                        <option value='WV'>West Virginia</option>
-                        <option value='WI'>Wisconsin</option>
-
-                        <option value='WY'>Wyoming</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td height="33">County</td>
-
-                <td>
-                    <div id="county_drop_down">
-                            <select id="county" name="county">
-                                <option value="">County...</option>
-                            </select>
-                            <button type="submit">Submit</button>
-
+                    
+                      <select id="state" name="state">
+  
+                          <option value='AL'>Alabama</option>
+                          <option value='AK'>Alaska</option>
+                          <option value='AZ'>Arizona</option>
+                          <option value='AR'>Arkansas</option>
+                          <option value='CA'>California</option>
+  
+                          <option value='CO'>Colorado</option>
+                          <option value='CT'>Connecticut</option>
+                          <option value='DE'>Delaware</option>
+                          <option value='DC'>District of Columbia</option>
+                          <option value='FL'>Florida</option>
+  
+                          <option value='GA'>Georgia</option>
+                          <option value='HI'>Hawaii</option>
+                          <option value='ID'>Idaho</option>
+                          <option value='IL'>Illinois</option>
+                          <option value='IN'>Indiana</option>
+  
+                          <option value='IA'>Iowa</option>
+                          <option value='KS'>Kansas</option>
+                          <option value='KY'>Kentucky</option>
+                          <option value='LA'>Louisiana</option>
+                          <option value='ME'>Maine</option>
+  
+                          <option value='MD'>Maryland</option>
+                          <option value='MA'>Massachusetts</option>
+                          <option value='MI'>Michigan</option>
+                          <option value='MN'>Minnesota</option>
+                          <option value='MS'>Mississippi</option>
+  
+                          <option value='MO'>Missouri</option>
+                          <option value='MT'>Montana</option>
+                          <option value='NE'>Nebraska</option>
+                          <option value='NV'>Nevada</option>
+                          <option value='NH'>New Hampshire</option>
+  
+                          <option value='NJ'>New Jersey</option>
+                          <option value='NM'>New Mexico</option>
+                          <option value='NY'>New York</option>
+                          <option value='NC'>North Carolina</option>
+                          <option value='ND'>North Dakota</option>
+  
+                          <option value='OH'>Ohio</option>
+                          <option value='OK'>Oklahoma</option>
+                          <option value='OR'>Oregon</option>
+                          <option value='PA'>Pennsylvania</option>
+                          <option value='RI'>Rhode Island</option>
+  
+                          <option value='SC'>South Carolina</option>
+                          <option value='SD'>South Dakota</option>
+                          <option value='TN'>Tennessee</option>
+                          <option value='TX'>Texas</option>
+                          <option value='UT'>Utah</option>
+  
+                          <option value='VT'>Vermont</option>
+                          <option value='VA'>Virginia</option>
+                          <option value='WA'>Washington</option>
+                          <option value='WV'>West Virginia</option>
+                          <option value='WI'>Wisconsin</option>
+  
+                          <option value='WY'>Wyoming</option>
+                      </select>
                     </div>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+            
+  
+                  <td>
+                      <div class="county" id="county_drop_down">
+                        <div class="select">
+                              <select id="county" name="county">
+                                  <option value="">County...</option>
+                              </select>
+                              
+                            </div>
+  
+                      </div>
 
-                    <span id="loading_county_drop_down">
-                        <img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...
-                    </span>
+                      <button type="submit">Submit</button>
+  
+                      <span id="loading_county_drop_down">
+                          <img src="style/loader.gif" width="16" height="16" align="absmiddle">&nbsp;Loading...
+                      </span>
+  
+                      <div id="no_county_drop_down">This state has no counties.</div>
+                  </td>
+              </tr>
+          </table>
+      </form>
+      </div>
+    </section>
 
-                    <div id="no_county_drop_down">This state has no counties.</div>
-                </td>
-            </tr>
-        </table>
-    </form>
+    <section class="section2">
+      <h1 class="h1--special">Facts About Wild Fires</h1>
+      <div class="grid grid--1x2">
+        <div>
+          <img
+            src="images/issy-bailey-tEIHSmfwznM-unsplash.webp"
+            alt="WildFire"
+            class="img--left"
+          />
+        </div>
+        <h2 class="tmp">
+          Statistics have shown...
+          <ul class="right-hand">
+            <li class="tmp2">
+              4.5 million U.S. homes are at high or extreme risk from wildfires,
+              with over 2 million in California alone.
+            </li>
+            <li class="tmp2">
+              There were <i>58,985 </i> wildfires in 2021, which affected 7.1
+              million acres, compared to just <i>18,229</i> wildfires and
+              <i>1,323,666</i>
+              acres lost in 1983.
+            </li>
+            <li class="tmp2">
+              Humans cause as many as 90% of wildfires, with the remaining 10%
+              caused by lava and lightning.
+            </li>
+          </ul>
+        </h2>
+      </div>
+    </section>
 
-    <!--  <div class=container>
-        <h3>Select your location!</h3>
-
-
-        <form action="/test/submit" method="post">
-            <input type="text" name="sth">
-            <select>
-
-                <option disabled hidden selected>None</option>
-                <option value="Tennessee">Tennessee</option>
-                <option value="California">California</option>
-                <option value="Texas">Texas</option>
-            </select>
-            <button type="submit">Submit</button>
-            <h2>Result</h2>
-        </form>
-        
-    </div> -->
-
-    <script src="script.js"></script>
-</body>
-
-
-
-<!-- <body>
-    <div class=container>
-        <h3>Select your location!</h3>
-
-
-        <form action="/test/submit" method="post">
-            <input type="text" name="sth">
-            <select>
-
-                <option disabled hidden selected>None</option>
-                <option value="Tennessee">Tennessee</option>
-                <option value="California">California</option>
-                <option value="Texas">Texas</option>
-            </select>
-            <button type="submit">Submit</button>
-            <h2>Result</h2>
-        </form>
-        
-    </div>
-    <script src="script.js"></script>
-
-    <link rel="stylesheet" href="https://www.solodev.com/assets/selectize/css/normalize.css">
-<link rel="stylesheet" href="https://www.solodev.com/assets/selectize/css/selectize.default.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://www.solodev.com/assets/selectize/js/jquery.js"></script>
-<script src="https://www.solodev.com/assets/selectize/js/selectize.js"></script>
-<script src="https://www.solodev.com/assets/selectize/js/index.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="state.js"></script>
-
-</body> -->
-
+    <footer class="block block--dark footer">
+      <div class="container grid footer__sections">
+        <section class="collapsible footer__section">
+          <div class="collapsible__header"></div>
+          <p class="textt collapsible__heading footer__heading">Thanks to</p>
+          <div class="collapsible__content">
+            <img src="images/vandyhacks.jpeg" alt="" style="width: 15rem" />
+          </div>
+        </section>
+        <div class="footer__brand">
+          <img src="images/VanderbiltLogo.png" alt="" />
+          <p class="footer__copyright">Copyright 2022 Vanderbilt University</p>
+          <p class="footer__copyright">
+            Created by Daniel Little, Huijun Hao, Xutong Sun and Yuanhe Li.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

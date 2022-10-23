@@ -122,9 +122,10 @@ input:focus::placeholder {
     margin-bottom: 5rem;
 }
 
-.section{
+.section2{
     margin-top: 5rem;
     margin-bottom: 3rem;
+    min-height: 100vh;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -290,4 +291,71 @@ input:focus::placeholder {
   .textt{
     margin-left: 2rem;
     font-size: 2rem;
+  }
+
+  .state {
+    font-size: 13px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .state .select {
+    width: 120%;
+  }
+
+  .state .select select{
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+  }
+
+  .state .select {
+      width: 120%;
+      background:url('arrow.png') no-repeat;
+      background-position:80% center;
+  }
+
+  .county {
+    
+    font-size: 13px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .county .select {
+    width: 120%;
+  }
+
+  .county .select select{
+    background: transparent;
+    line-height: 1;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 120%;
+    position: relative;
+    z-index: 10;
+    font-size: 1em;
+  }
+
+  .county .select {
+      width: 120%;
+      background:url('arrow.png') no-repeat;
+      background-position:80% center;
   }
