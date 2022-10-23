@@ -378,3 +378,17 @@ input:focus::placeholder {
     margin-left: 15rem;
     margin-right: 15rem;
   }
+
+  .h1--result{
+    color: red;
+    text-transform: uppercase;
+  }
+
+
+  .list--style{
+    margin-left: 20rem;
+  }
+
+  .conditions{
+    color: #5c5577;
+  }

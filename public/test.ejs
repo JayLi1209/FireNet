@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,19 +12,49 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/normalize.css" />
-    
-    <title>Document</title>
-</head>
-<body>
 
-
+    <title>FireNet</title>
+  </head>
+  <body>
     <section>
-        <div class="background">
-            <h1>You are currently in a </h1>
-            <%= output; %>
-            <h1>fire severity area.</h1>
-            <h2>* As based on 55,000 historical wildfires</h2>
-        </div>
+      <div class="background">
+        <h2>Wild File Predictor</h2>
+        <h1>
+          You are currently in a <a class="h1--result"><%= output; %></a> fire
+          severity area.
+        </h1>
+        <h4>As based on 55,000 historical wildfires.</h4>
+      </div>
     </section>
-</body>
+
+    <section class="section4">
+      <h2>Results</h2>
+      <p class="conditions">
+        If you are in a <a class="h1--result">low </a> fire severity area...
+      </p>
+      <ul class="list--style">
+        <li>wildfires occur rarely here, and are relatively small.</li>
+        <li>Be mindful if campfires, bonfires, and other outdoor burns.</li>
+      </ul>
+      <p class="conditions">
+        If you are in a <a class="h1--result">medium </a> fire severity area...
+      </p>
+      <ul class="list--style">
+        <li>wildfires may get moderately large here (up to 1,000 acres).</li>
+        <li>
+          Reconsider outdoor burns and pay attention for dry weather conditions.
+        </li>
+      </ul>
+      <p class="conditions">
+        If you are in a <a class="h1--result">high </a> fire severity area...
+      </p>
+      <ul class="list--style">
+        <li>
+          Wildfires occur relatively frequently here, and are often over 1,000
+          acres
+        </li>
+        <li>Restrict any outdoor burns and be vigiant for rising smoke.</li>
+      </ul>
+    </section>
+  </body>
 </html>
