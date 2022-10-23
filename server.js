@@ -32,6 +32,7 @@ app.get('/test/:id', function (req, res, next) {
 
 app.post('/test/submit', function (req, res, next) {
     var id = req.body.county;
+    console.log(id)
     res.redirect('/test/' + id);
 })
 

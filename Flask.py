@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -53,8 +53,10 @@ model.fit(X_train, y_train)
 
 @app.route("/", methods=['POST'])
 def predictor():
+    # print("hiii")
     data = request.get_json()
+    print(data)
     predictions = model.predict(data['x'])
-    return {"Risk": predictions, "Location": "asdf", "data3": 1}
+    return {"Risk": predictions.tolist(), "Location": "asdf", "data3": 1}
 
 
