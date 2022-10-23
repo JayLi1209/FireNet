@@ -2,17 +2,15 @@ from flask import Flask, request
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('fire_prediction_model.sav', 'rb'))
-scaler = pickle.load(open('input_scaler_model.sav', 'rb'))
+model = pickle.load(open('fire_prediction_model_unscaled.sav', 'rb'))
 
 @app.route("/", methods=['POST'])
 def predictor():
     data = request.get_json()
-    scaled_input = scaler.predict(data['x'])
-    prediction = model.predict(scaled_input)
-    if (prediction < 100):
+    prediction = model.predict(data['x'])
+    if (prediction < 500):
         size = 'small'
-    elif (prediction < 1000):
+    elif (prediction < 1500):
         size = 'medium'
     else:
         size = 'large'
