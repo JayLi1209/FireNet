@@ -9,11 +9,11 @@ def predictor():
     data = request.get_json()
     prediction = model.predict(data['x'])
     if (prediction < 500):
-        size = 'small'
+        size = 'Low'
     elif (prediction < 1500):
         size = 'medium'
     else:
-        size = 'large'
-    return {"Risk": size, "Location": "asdf", "data3": 1}
+        size = 'High'
+    return {"Risk": size}
 
 
