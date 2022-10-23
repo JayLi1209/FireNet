@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 from flask import Flask
+=======
+from flask import Flask, request
+import numpy as np
+>>>>>>> 8c1a19f0efea8fdb0381368d84ef1bb3cf7c8732
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Ridge
@@ -49,8 +54,10 @@ model.fit(X_train, y_train)
 
 @app.route("/", methods=['POST'])
 def predictor():
+    # print("hiii")
     data = request.get_json()
+    print(data)
     predictions = model.predict(data['x'])
-    return {"Risk": predictions, "Location": "asdf", "data3": 1}
+    return {"Risk": predictions.tolist(), "Location": "asdf", "data3": 1}
 
 
