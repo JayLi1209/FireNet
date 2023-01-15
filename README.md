@@ -14,6 +14,6 @@ In the future, we might consider sending notifications to users, and develop int
 
 #### Currently, only certain states are supported. Check back later for progress!
 
-Made by Daniel Little, Junhao Hui (data training, model building), Xutong Sun, and Yuanhe Li (frontend & backend) during Hackathon IX.
+Made by Daniel Little, Junhao Hui (data training, model building), Xutong Sun, and Yuanhe Li (frontend & backend).
 
 
