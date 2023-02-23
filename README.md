@@ -10,6 +10,8 @@ In the future, we might consider sending notifications to users, and develop int
 2. In a terminal rooted in the project, run `npm run dev`
 3. In a live server, execute localhost:8383.
 
+More information can be found [here](https://devpost.com/software/wild-fire-severity-prediction).
+
 ## We are considering deploying the website!
 
 #### Currently, only certain states are supported. Check back later for progress!
